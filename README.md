@@ -14,3 +14,10 @@ data.available.value_counts()
 f(false) means not available, t(true) means available 
 
 ## 2 purpose: calculates the percentage of available (t) and unavailable (f) dates.
+Explanation value_counts(normalize=True) give proportion. Multiplaying by 100 converts the proportion into percentage
+
+
+``` diff
+availability_percentage = calendar['available'].value_counts(normalize=True) * 100
+availability_percentage
+```
